@@ -1,0 +1,1161 @@
+body {
+  background: #f2f6f9;
+}
+
+/*Preventing horizontal scroll on mobile*/
+html,
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+body {
+  position: relative;
+}
+
+form{
+  overflow-x:auto;
+}
+
+label{
+  color:#009DE9;
+  padding-left:0.75rem;
+}
+
+input[type="date"]::before{
+   color: #ffffff;
+   content: attr(placeholder) ":etsegges ";
+}
+input[type="date"]:focus::before {
+   content: "efefef" !important;
+}
+
+.form-control:disabled{
+  color:#BDBDBD;
+  background-color:#fff!important;
+  margin-bottom:1rem;
+}
+
+.fa-chevron-down {
+  -webkit-animation: action 1s infinite alternate;
+  animation: action 1s infinite alternate;
+
+  width: 50px;
+  margin: auto;
+  position: absolute;
+  font-size: 10rem;
+  text-align: center;
+  top: 85vh;
+  right: 50vw;
+  z-index: 10000;
+}
+@-webkit-keyframes action {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+@keyframes action {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+/*Rows with class of date are invisible until fully within view.*/
+.fade {
+  opacity: 0;
+}
+
+/*FONT SIZINGS*/
+.t-peta {
+  font-size: 4.75rem;
+}
+
+.t-tera {
+  font-size: 3.375rem;
+}
+
+.t-giga {
+  font-size: 2.25rem;
+}
+
+.t-mega {
+  font-size: 1.75rem;
+}
+
+.t-kilo {
+  font-size: 1.5rem;
+}
+
+.t-hecto {
+  font-size: 1.25rem;
+}
+
+.t-deca {
+  font-size: 1.125rem;
+}
+
+.t-base {
+  font-size: 1rem;
+}
+
+.t-deci {
+  font-size: 0.875rem;
+}
+
+.t-centi {
+  font-size: 0.75rem;
+}
+
+.light {
+  font-weight: 300;
+}
+
+.myNav {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 10px 0px,
+    rgba(0, 0, 0, 0.06) 0px 4px 5px 0px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  font-family: "Lato";
+}
+
+.navbar {
+  position: fi;
+}
+
+.fa-headphones,
+.fa-pen,
+.fa-trash {
+  color: #009de9;
+  padding-right: 0.5rem;
+}
+
+table .fa-trash,
+table .fa-pen {
+  cursor: pointer;
+}
+
+table .fa-trash:hover,
+table .fa-pen:hover {
+  transform: scale(1.2);
+  color: #0069d9;
+}
+
+table a:hover {
+  cursor: pointer;
+}
+
+.paginateContain {
+  background: transparent;
+  width: 50%;
+  margin-left: auto;
+}
+
+#dropdownMenuButton {
+  background: transparent;
+  color: black;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-radius: 0;
+}
+
+#dropdownMenuButton:after {
+  display: none;
+}
+
+.myBtn {
+  margin: 0.5rem;
+  border-radius: 0px;
+}
+
+.jumbotron {
+  color: white;
+
+  height: 100vh;
+  position: relative;
+}
+
+.jumbotron::before {
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-image: url("../img/main.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(40%);
+}
+
+.jumbotron .container {
+  position: relative;
+}
+
+/* .myJumbotron {
+  height: 45vw;
+  display: grid;
+  place-items: center;
+  color: white;
+  position: relative;
+}
+
+.myJumbotron::before {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url("../img/main.jpg");
+  background-position: center;
+  background-position-y: 70%;
+  filter: brightness(20%);
+  color: white;
+}
+
+.module-inside {
+  position: relative;
+}
+
+.module-inside-bottom {
+  position: relative;
+} */
+*/ body {
+  font-family: "Lato", sans-serif;
+}
+
+/* .myCard {
+  height: 30rem;
+}
+
+.myCard img {
+  height: 100%;
+  object-fit: cover;
+} */
+
+.navbar-brand {
+  padding-bottom: 0.4rem;
+}
+
+.navbar {
+  padding: 0rem 1rem;
+  /* position: fixed; */
+  /* z-index: 1; */
+  width: 100%;
+}
+
+.navbar-nav a {
+  border-bottom: 2px solid transparent;
+  padding: 1rem;
+}
+
+.navbar-nav button {
+  align-self: auto;
+}
+
+.navbar-nav a:hover {
+  border-bottom: 2px solid #009de9;
+}
+
+.reverseNav {
+  flex-direction: row-reverse;
+}
+
+.quoteBtn h2,
+.actsBtn h2,
+.venuesBtn h2 {
+  text-transform: uppercase;
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+}
+
+.quoteBtn {
+  background: #005288;
+  padding: 2rem;
+  border-radius: 71px;
+  text-align: center;
+}
+.actsBtn {
+  background: #007873;
+  border-radius: 71px;
+  padding: 2rem;
+}
+.venuesBtn {
+  background: #2b485c;
+  border-radius: 71px;
+  padding: 2rem;
+}
+.btnsRow {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.actionBtn {
+  transition-property: transform;
+  transition-duration: 0.5s;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.actionBtn:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.engie-head {
+  color: #18c6cd;
+}
+
+/* .cardsRow {
+  height: 50vw;
+}
+
+.cardsRow .col-lg-3 {
+  height: 100%;
+}
+
+.cardsRow .col-lg-3 .card {
+  height: 60%;
+}
+
+.cardsRow .col-lg-3 .card img {
+  height: 50%;
+  object-fit: cover;
+} */
+
+.card-img-top {
+  width: 100%;
+  height: 30vh;
+  object-fit: cover;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card-img-topFull {
+  width: 100%;
+  object-fit: cover;
+}
+
+.myTitle {
+  color: #212121;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.findTickets {
+  color: #15c2d2;
+}
+
+/* .circular{
+  width: 50vw;
+  height: 50vw;
+  overflow: hidden;
+  border-radius: 50%;
+
+}
+
+.circular img{
+  display: inline;
+  margin: 0 auto;
+  height: 100%;
+  width: auto;
+} */
+
+.backBox {
+  background: #fff;
+  padding: 4rem;
+  position: relative;
+  /* transition: transform 0.3s; */
+}
+
+.backBoxB {
+  background: #fff;
+  padding: 4rem;
+  position: relative;
+  text-align: right;
+}
+
+.frontBoxB {
+  position: absolute;
+  margin-top: 15%;
+  /* right:60%;
+  top:80%; */
+}
+
+.frontBox {
+  position: absolute;
+  /* top:80%;
+  left:60% */
+}
+
+.frontBox {
+  animation: slide-left 2s infinite;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s);
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+.frontBoxB {
+  animation: slide-right 2s infinite;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s);
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes slide-right {
+  from {
+    margin-right: 50%;
+  }
+  to {
+    margin-right: 10%;
+  }
+}
+
+@keyframes slide-left {
+  from {
+    margin-left: 50%;
+  }
+  to {
+    margin-left: 10%;
+  }
+}
+
+.fullImg1 {
+  background-image: url("../img/fullImg1.jpg");
+}
+
+.fullImg2 {
+  background-image: url("../img/fullImg2.jpg");
+}
+
+.fullImg3 {
+  background-image: url("../img/fullImg3.jpg");
+}
+
+.fullImg4 {
+  background-image: url("../img/slane_castle.jpg");
+}
+
+.fullImg {
+  /* background-image: linear-gradient(135deg, #00aaff, #23d2b5); */
+  background-position: center;
+  background-size: cover;
+  padding: 1rem;
+  height: 100%;
+  min-height: 40vw;
+  border: none !important;
+}
+
+.min100 {
+  min-height: 100%;
+}
+
+.fullImg .card-body {
+  height: 100%;
+}
+
+.fullImg img {
+  vertical-align: top;
+  width: 100%;
+  opacity: 0;
+}
+
+.cardOverlay {
+  /* height: calc(320px - 2rem); */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1rem;
+  background-color: transparent;
+  transition: background-color 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+    padding 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card:hover .cardOverlay {
+  background: #fff;
+}
+
+.cardTitle {
+  color: #fff;
+  transform: translateY(calc(250px - 3rem - 100%));
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.cardOverlay button {
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  color: white !important;
+}
+
+.hide ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#decorated {
+  list-style-type: disc;
+  padding-left: 1rem;
+}
+
+.hide button {
+  align-self: center;
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+button {
+  display: inline-flex;
+  align-self: center;
+  flex-direction: row;
+}
+
+.hide {
+  transform: translateY(calc(500px));
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  display: none;
+  visibility: hidden;
+}
+
+.fullImg:hover > * .hide {
+  display: block !important;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.hide {
+  display: none;
+}
+
+.card:hover .cardTitle {
+  color: #000;
+  transform: translateY(0);
+}
+
+.card:hover button {
+  color: #000;
+  transform: translateY(0);
+}
+
+/* .cardOverlay .cardTitle {
+  transform: translateY(calc(320px - 3rem - 100%));
+  color: white;
+} */
+
+.fullImg {
+  position: relative;
+}
+
+.buttonContain {
+  width: 100%;
+}
+
+.featuredCardImg {
+  width: 30%;
+}
+
+.featuredCardImg img {
+  max-width: 100%;
+}
+
+.labelHidden {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: polygon(0px 0px, 0px 0px, 0px 0px, 0px 0px);
+  /*This is so the screen reader can still see it*/
+}
+
+.form-control {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid #e0e0e0;
+  border-radius: 0px;
+}
+
+.form-control:focus {
+  border-bottom: 2px solid #009de9;
+  box-shadow: none;
+}
+
+/*Change placeholder text colour*/
+::-webkit-input-placeholder {
+  /* Edge */
+  color: #757575;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #757575;
+}
+
+::placeholder {
+  color: #757575;
+}
+
+form {
+  background: #fff;
+  padding: 5%;
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(136, 64, 64, 0.5);
+  -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+.companyNameFooter {
+  padding: 5%;
+}
+
+.rowSpacer {
+  margin-top: 15rem !important;
+}
+
+.rowSpacerHalf {
+  margin-top: 7.5rem !important;
+}
+
+.footer {
+  padding-top: 10%;
+  background: #fff;
+  padding: 5%;
+  border-bottom: 4px solid #009de9;
+}
+
+.footerItem {
+  list-style: none;
+  padding-top: 2%;
+}
+
+.footerList {
+  width: 100%;
+  border-top: 2px solid #e0e0e0;
+}
+
+.fab {
+  color: #009de9;
+}
+
+/*DASHBOARD/UIKIT PAGE*/
+.dashboardContain {
+  background: #eeeeee;
+  border-radius: 20px;
+  padding: 3%;
+  -webkit-box-shadow: 10px 10px 5px -10px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 5px -10px rgba(0, 0, 0, 0.75);
+}
+
+.daysList li {
+  list-style: none;
+}
+
+.numbersRow {
+  padding: 5%;
+}
+
+.numbersRow li {
+  list-style: none;
+  text-align: center;
+}
+
+.calendar {
+  background: #fff;
+  border-radius: 20px;
+  padding: 5%;
+  padding-top: 2%;
+  width: 95%;
+}
+
+.eventTable {
+  width: 100%;
+  margin-left: 0 !important;
+}
+
+.eventTable table {
+  overflow: scroll;
+  width: 100%;
+}
+
+.searchBar {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid #e0e0e0;
+  border-radius: 0px;
+  background: transparent;
+  width: 40%;
+}
+
+.searchBar:focus {
+  border-bottom: 2px solid #009de9;
+  box-shadow: none;
+}
+
+.filter {
+  list-style: none;
+  padding: 0.5rem;
+}
+
+.tableCont {
+  padding-left: 5%;
+  padding-top: 0.5%;
+}
+
+.tableCol {
+  background: #fff;
+}
+
+.userTable tbody tr:nth-child(odd) {
+  background: #f5f5f5;
+}
+
+.userTable {
+  background: #fff;
+}
+
+table {
+  table-layout: auto;
+}
+
+table thead th:not(nth-child(1)) {
+  display: flex;
+}
+
+.table thead th {
+  vertical-align: initial !important;
+}
+
+.tableCol {
+  border-radius: 20px;
+  padding: 2%;
+}
+
+.userTableCont {
+  background: #fff;
+  padding: 2%;
+}
+
+/* .th-align {
+  display: flex;
+  align-items: center;
+} */
+
+.fa-user {
+  color: #009de9;
+  font-size: 3rem;
+}
+
+.fa-user-contain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5rem;
+  height: 5rem;
+  background: #fff;
+  border-radius: 50%;
+}
+
+.fa-angle-left,
+.fa-angle-right {
+  color: #009de9;
+  font-size: 2rem;
+}
+
+.paginateArrow {
+  color: #000;
+  font-size: 1rem;
+}
+
+.paginationRow {
+  align-self: center !important;
+  margin-top: 2%;
+}
+
+.pagination {
+  margin-bottom: 0 !important;
+}
+
+.pagination * {
+  background: transparent;
+  outline: none;
+  border: none;
+}
+
+.alt7 {
+  color: #009de9;
+}
+
+.searchContain {
+  width: 40%;
+  display: flex;
+  align-items: baseline;
+}
+
+.searchContain input {
+  width: 100%;
+}
+
+.fa-search {
+  color: #757575;
+}
+
+.form-control {
+  margin-bottom: 1rem;
+}
+
+.mainText {
+  margin-bottom: 5rem;
+}
+
+.about_text p:before {
+  content: "";
+  width: 4rem;
+  height: 0.1rem;
+  background-color: #009de9;
+  margin-right: 50px;
+  margin-left: -5rem;
+  -webkit-transform: translateY(20px);
+  -o-transform: translateY(20px);
+  transform: translateY(20px);
+  display: block;
+}
+
+.about_text p {
+  margin-left: 5rem;
+}
+
+.noPad {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+
+.mainImg {
+  max-width: 100%;
+  height: auto;
+}
+
+.services {
+  padding-left: 0;
+  margin-left: 1rem;
+}
+
+.services li {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.schedule p {
+  text-align: left;
+  margin-top: 0.5rem;
+}
+
+/*Slightly modified version of Engie's corporate gradient*/
+.engieGradient {
+  background-image: linear-gradient(
+    0deg,
+    rgba(209, 209, 209, 0.88) 0%,
+    rgba(0, 202, 255, 1) 50%,
+    rgba(35, 210, 181, 1) 100%
+  );
+}
+
+/*Accommodates the gradient wrapper*/
+.underline {
+  border-bottom: 4px solid;
+  border-image: linear-gradient(135deg, #00aaff, #23d2b5) 20% round;
+}
+
+.scrolling-wrapper {
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  width: 100%;
+}
+
+.card-block {
+  /* height: 100%; */
+  border: none;
+}
+
+strong {
+  color: #00aaff;
+}
+
+.hashTagGreen {
+  background: #6ed2b1;
+  border-radius: 1.5rem;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  margin-bottom: 1.5rem;
+}
+
+.hashTagBlue {
+  background: #009de9;
+  border-radius: 1.5rem;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  margin-bottom: 1.5rem;
+}
+
+.myImgTop {
+  border-radius: 0 !important;
+}
+
+table td,
+.table th {
+  padding: 0.75rem;
+}
+
+.backTop i:hover {
+  filter: brightness(2);
+  transform: scale(1.2);
+}
+
+.backTop i {
+  font-size: 4rem;
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+  color: #009de9;
+  border-radius: 15%;
+  padding: 5px;
+  z-index: 1;
+  opacity: 0.5;
+}
+
+.alert-engie {
+  background: #009934;
+  border-radius: 0px;
+  color: white;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.error {
+  background: #cc0033;
+}
+
+.warning {
+  background: #e07602;
+}
+
+.language {
+  width: 50px;
+  height: 50px;
+  background-size: contain;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.eng {
+  background-image: url("../img/svg/gb.svg");
+}
+.es {
+  background-image: url("../img/svg/es.svg");
+}
+
+.fr {
+  background-image: url("../img/svg/fr.svg");
+}
+
+.de {
+  background-image: url("../img/svg/de.svg");
+}
+
+.it {
+  background-image: url("../img/svg/it.svg");
+}
+
+.ru {
+  background-image: url("../img/svg/ru.svg");
+}
+
+/* .collapse.dont-collapse-sm {
+  display: block;
+  height: auto !important;
+  visibility: visible;
+} */
+
+/*Necessary to remove nowrap on horizontal scrolling section*/
+/*Also applying hover effects by default on the 'options' section's cards.*/
+/* Smartphones (portrait and landscape) ----------- */
+
+@media only screen and (min-width: 320px) and (max-width: 1024px) {
+  .scrolling-wrapper {
+    flex-wrap: wrap;
+  }
+
+  .eventTable {
+    width: 95%;
+    margin-left: auto !important;
+  }
+
+  th .fas {
+    display: none;
+  }
+  .paginateContain {
+    width: 100%;
+    margin-left: 0;
+  }
+  .hide {
+    transform: translateY(0);
+    display: block !important;
+    visibility: visible;
+  }
+
+  .t-peta {
+    font-size: 4rem;
+  }
+
+  .cardOverlay {
+    background-color: #fff;
+  }
+
+  .cardTitle {
+    color: #000;
+    transform: translateY(0);
+  }
+
+  .cardOverlay button {
+    color: #000;
+    transform: translateY(0);
+  }
+
+  /*Turn off fade in effects on mobile*/
+  .fade {
+    opacity: 1 !important;
+  }
+
+  .fullWidth {
+    width: 95%;
+  }
+
+  .firstImg {
+    display: none;
+  }
+
+  .rowSpacer {
+    margin-top: 2rem !important;
+  }
+  .featuredCardImg {
+    width: 100%;
+  }
+  table {
+    table-layout: auto;
+  }
+
+  table td,
+  .table th {
+    padding: 0;
+    font-size: 0.9rem;
+  }
+
+  table th {
+    padding-right: 1.5rem;
+  }
+
+  .userTableCont {
+    overflow-x: auto;
+  }
+
+  .userTable th {
+    margin-left: 1rem;
+    padding: 1rem;
+  }
+
+  .tableHeaderResponsive {
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center !important;
+  }
+
+  .responsiveFilters {
+    margin: auto;
+    justify-content: center;
+  }
+
+  .tableHeaderResponsive h1 {
+    margin: auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .tableHeaderResponsive .searchContain {
+    margin: auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .tableHeaderResponsive .fa-user-contain {
+    margin: auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .paginationRow {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    align-self: end !important;
+  }
+
+  #scrollDown {
+    display: none !important;
+  }
+}
+
+/* iPads (portrait and landscape) ----------- */
+/* @media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .scrolling-wrapper {
+    flex-wrap: wrap;
+  }
+  .hide {
+    transform: translateY(0);
+    display: block !important;
+    visibility: visible;
+  }
+  .cardOverlay {
+    background-color: #fff;
+  }
+
+  .cardTitle {
+    color: #000;
+    transform: translateY(0);
+  }
+
+  .cardOverlay button {
+    transform: translateY(0);
+  }
+
+  .fade {
+    opacity: 1 !important;
+  }
+
+  .firstImg {
+    display: none;
+  }
+
+  .rowSpacer {
+    margin-top: 2rem !important;
+  }
+} */

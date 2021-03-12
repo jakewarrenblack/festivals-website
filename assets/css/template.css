@@ -1,0 +1,13 @@
+header {
+  background-image: url("../img/banner-1920.jpg");
+  padding: .5rem 1rem;
+}
+header h1 {
+  margin-bottom: 0;
+}
+main {
+  padding: .5rem 1rem;
+}
+footer {
+  padding: .5rem 1rem;
+}
