@@ -3,8 +3,9 @@ HTML/CSS, PHP and MySQL learning exercise. Login/register system with CRUD funct
 
 * Create a MySQL database and import 'users.sql'. Run this project on localhost (XAMPP or Laragon on Windows).
 ***
-# Homepage
-![Screenshot_2021-03-12 Music festivals](https://user-images.githubusercontent.com/47800618/110949007-ffa04480-8339-11eb-8a34-06d327e35fc1.png)
+# Homepage - hero section
+![Uploading Screenshot_2021-03-12 Music festivals(1).png…]()
+
 
 ***
 # User homepage
